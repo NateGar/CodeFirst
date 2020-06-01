@@ -1,0 +1,8 @@
+﻿@using Code_First.Context
+@model IEnumerable<Thing>
+
+@foreach (Thing t in Model)
+{
+    <p>This is a: @t.WhatIsIt</p>
+    <p>This is how Many I have: @t.HowMany</p>
+}
